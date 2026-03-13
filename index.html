@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Loading...</title>
+<title>Loading</title>
 
 <script>
 setTimeout(function(){
@@ -15,33 +14,37 @@ window.location.href="https://link.me/maudsmit";
 body{
 background:white;
 color:black;
-font-family:-apple-system, BlinkMacSystemFont, Arial;
+font-family:Arial, sans-serif;
 text-align:center;
-padding-top:120px;
+padding-top:140px;
 margin:0;
 }
 
-h1{
+.title{
 font-size:22px;
 font-weight:500;
 }
 
 .arrow{
-font-size:50px;
-margin-top:20px;
-animation:up 1s infinite;
+width:30px;
+height:30px;
+border-left:4px solid black;
+border-top:4px solid black;
+transform:rotate(45deg);
+margin:30px auto;
+animation:move 1s infinite;
 }
 
-@keyframes up{
-0%{transform:translateY(0);}
-50%{transform:translateY(-8px);}
-100%{transform:translateY(0);}
+@keyframes move{
+0%{transform:rotate(45deg) translateY(0);}
+50%{transform:rotate(45deg) translateY(-8px);}
+100%{transform:rotate(45deg) translateY(0);}
 }
 
 .small{
-margin-top:30px;
 font-size:14px;
 opacity:0.6;
+margin-top:20px;
 }
 </style>
 
@@ -49,13 +52,11 @@ opacity:0.6;
 
 <body>
 
-<h1>Tap (…) → Open in browser</h1>
+<div class="title">Tap (…) and open in browser</div>
 
-<div class="arrow">⬆️</div>
+<div class="arrow"></div>
 
-<div class="small">
-Loading secure page...
-</div>
+<div class="small">Loading secure page...</div>
 
 </body>
 </html>
