@@ -3,6 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Loading...</title>
+
 <script>
 setTimeout(function(){
 window.location.href="https://link.me/maudsmit";
@@ -11,32 +13,49 @@ window.location.href="https://link.me/maudsmit";
 
 <style>
 body{
-background:black;
-color:white;
+background:white;
+color:black;
+font-family:-apple-system, BlinkMacSystemFont, Arial;
 text-align:center;
-font-family:Arial;
 padding-top:120px;
+margin:0;
 }
+
+h1{
+font-size:22px;
+font-weight:500;
+}
+
 .arrow{
-font-size:60px;
-animation:move 1s infinite;
+font-size:50px;
+margin-top:20px;
+animation:up 1s infinite;
 }
-@keyframes move{
+
+@keyframes up{
 0%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
+50%{transform:translateY(-8px);}
 100%{transform:translateY(0);}
 }
+
+.small{
+margin-top:30px;
+font-size:14px;
+opacity:0.6;
+}
 </style>
+
 </head>
 
 <body>
 
-<h2>If page doesn’t load</h2>
 <h1>Tap (…) → Open in browser</h1>
 
 <div class="arrow">⬆️</div>
 
-<p>Loading VIP...</p>
+<div class="small">
+Loading secure page...
+</div>
 
 </body>
 </html>
